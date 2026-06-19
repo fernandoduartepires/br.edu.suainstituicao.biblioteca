@@ -43,6 +43,6 @@ public class AutorResource {
     @DeleteMapping(value = "/{id}")
     public ResponseEntity<Void> delete(@PathVariable Long id) {
         service.delete(id);
-        return ResponseEntity.noContent().build(); // Retorna o 204 pedido na atividade!
+        return ResponseEntity.noContent().build();
     }
 }
