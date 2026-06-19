@@ -46,7 +46,7 @@ public class LivroResource {
         return ResponseEntity.noContent().build();
     }
 
-    // Este é o endpoint personalizado para buscar os livros de um autor específico!
+
     @GetMapping(value = "/autor/{autorId}")
     public ResponseEntity<List<Livro>> findByAutorId(@PathVariable Long autorId) {
         List<Livro> list = service.findByAutor(autorId);
